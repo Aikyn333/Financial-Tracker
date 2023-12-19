@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Product FinTrack</title>
+</head>
+<body>
+  <header class="header">
+    <a href="home.html" class="logo">Financial Tracker</a>
+  <nav class="navbar">
+    <a href="home.html" class="active">Home</a>
+    <a href="About.html">About</a>
+    <a href="Services.html">Our Services
+  </a>
+  </nav>
+  <div class="social-media">
+    <a href="https://www.linkedin.com/in/%D0%B0%D0%B9%D0%BA%D1%8B%D0%BD-%D0%B0%D1%80%D1%85%D0%B0%D1%82%D0%BE%D0%B2-56a23924b/"><i class='bx bxl-linkedin'></i></a>
+    <a href="https://t.me/a1kyn333"><i class='bx bxl-telegram' ></i></a>
+    <a href="https://www.instagram.com/asko_designer/"><i class='bx bxl-instagram' ></i></a>
+  </div>
+  </header>
+  <br>
+  <br>
+  <h1 class="heading">Product FinTrack</h1>
+  <div class="wrapper">
+    <div class="container">
+      <div class="form_wrapper">
+        <form>
+          <label for="total-money">Total Budget:</label>
+          <input type="number" id="total_budget" />
+        </form>
+        <form>
+          <div>
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product_name" />
+          </div>
+          <div>
+            <label for="product-price">Price:</label>
+            <input type="number" id="product_price" />
+          </div>
+          <div>
+            <label for="numberofproduct">Number of Product:</label>
+            <input type="number" id="numberofproduct" min="1" max="100000" value="1" />
+          </div>
+          <button type="button" id="add_product">Add Product</button>
+        </form>
+      </div>
+      <div class="product_table_and_result">
+        <table id="product_table">
+          <thead>
+            <tr>
+              <th>Product Name</th>
+              <th>Price</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <div class="budget_tacker_info">
+          <div>
+            <span>Expenses</span>
+            <h1 id="total_expenses">0</h1>
+          </div>
+          <div>
+            <span>Remaining</span>
+            <h1 id="remaining_value">0</h1>
+          </div>
+          <div>
+            <span>Total Money</span>
+            <h1 id="total">0</h1>
+          </div>
+        </div>
+      </div>
+      <button id="show_chart">Show Chart</button>
+      <canvas id="myChart" width="100" height="50"></canvas>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
